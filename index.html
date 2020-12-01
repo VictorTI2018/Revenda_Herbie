@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revendas Herbie</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+
+        </header>
+        <main class="content">
+            <div class="section">
+                <div class="col-md-6">
+                    <img class="img" src="./img/download.jpeg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Modelo:</label>
+                                <input type="text" name="modelo" id="modelo" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Preço R$ </label>
+                                <input type="text" name="preco" id="preco" class="form-control">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 offset-md-2">
+                                    <button class="btn btn-block btn-success" id="btnAdicionar">
+                                        Adicionar
+                                    </button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-block btn-warning" id="btnListarTodos">
+                                        Listar Todos
+                                    </button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-block btn-primary" id="btnFiltrar">
+                                        Filtrar por preço
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div id="listaCarros"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
